@@ -10,7 +10,7 @@ import java.util.List;
 @Controller
 public class CountriesController {
 
-    @RequestMapping("/")
+    @RequestMapping("/country")
     public String list(Model model) {
         model.addAttribute("countriesList", buildCountriesList());
         return "countriesList";
