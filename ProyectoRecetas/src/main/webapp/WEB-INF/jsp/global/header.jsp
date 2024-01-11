@@ -20,9 +20,15 @@
 			<h1 class="display-4">Mi Encabezado</h1>
 			<nav>
 				<ul class="nav">
-					<li class="nav-item"><a class="nav-link text-white" href="/">Listado
-							de recetas</a></li>
-					<li class="nav-item"><a class="nav-link text-white" href="/admin">Administración</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="/">Mostrar</a></li>
+					<li class="nav-item"><a class="nav-link text-white"
+						href="/admin">Insertar</a></li>
+					<li class="nav-item">
+						<form class="form-inline"
+							action="${pageContext.request.contextPath}/logout" method="post">
+							<button class="nav-link text-white" type="submit">Logout</button>
+						</form>
+					</li>
 				</ul>
 			</nav>
 		</div>

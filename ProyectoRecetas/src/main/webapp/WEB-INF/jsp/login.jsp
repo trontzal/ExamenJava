@@ -17,7 +17,7 @@
 			for="password">Contraseña:</label> <input type="password"
 			id="password" name="password" required><br> <input
 			type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-		<button type="submit">Iniciar sesión</button>
+		<button class="btn btn-primary" type="submit">Iniciar sesión</button>
 	</form>
 
 </body>

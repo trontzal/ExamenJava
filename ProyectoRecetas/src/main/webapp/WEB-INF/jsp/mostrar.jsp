@@ -23,7 +23,7 @@
 						</div>
 						<p class="card-text">Ejemplo de lo que seria una pequeña
 							descripcion de la receta.</p>
-						<a href="#" class="card-link">Ver receta</a>
+						<a href="/ver-receta" class="card-link">Ver receta</a>
 					</div>
 				</div>
 			</c:forEach>

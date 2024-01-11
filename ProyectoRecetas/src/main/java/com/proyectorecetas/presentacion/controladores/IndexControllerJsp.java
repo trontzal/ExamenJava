@@ -19,4 +19,9 @@ public class IndexControllerJsp {
 		System.out.println(user.listadoRecetas());
 		return "mostrar";
 	}
+	
+	@GetMapping("ver-receta")
+	public String verReceta() {
+		return "noImplementado";
+	}
 }
