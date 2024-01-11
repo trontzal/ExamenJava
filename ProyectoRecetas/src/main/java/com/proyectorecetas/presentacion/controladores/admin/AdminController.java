@@ -20,7 +20,6 @@ public class AdminController {
 
 	@GetMapping
 	public String index(Model modelo) {
-		modelo.addAttribute("recetas", admin.listadoRecetas());
 		return "admin/insertar";
 	}
 
