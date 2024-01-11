@@ -16,7 +16,6 @@ public class IndexControllerJsp {
 	@GetMapping("/")
 	public String mostrarHolaJSP(Model modelo) {
 		modelo.addAttribute("recetas", user.listadoRecetas());
-		System.out.println(user.listadoRecetas());
 		return "mostrar";
 	}
 	
