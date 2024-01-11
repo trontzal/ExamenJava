@@ -1,7 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ include file="/WEB-INF/jsp/global/header.jsp"%>
 <!DOCTYPE html>
 <html>
@@ -14,10 +10,10 @@
 	<form action="/login" method="post">
 		<label for="username">Usuario:</label> <input type="text"
 			id="username" name="username" required><br> <label
-			for="password">ContraseÃ±a:</label> <input type="password"
+			for="password">Contraseña:</label> <input type="password"
 			id="password" name="password" required><br> <input
 			type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-		<button class="btn btn-primary" type="submit">Iniciar sesiÃ³n</button>
+		<button class="btn btn-primary" type="submit">Iniciar sesión</button>
 	</form>
 
 </body>
