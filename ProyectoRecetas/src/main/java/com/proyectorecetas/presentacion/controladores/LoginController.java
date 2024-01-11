@@ -7,16 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class LoginController {
 
-    @GetMapping("/login")
-    public String mostrarPaginaLogin(Model model, String error, String logout) {
-        if (error != null) {
-            model.addAttribute("error", "Nombre de usuario o contraseña incorrectos.");
-        }
+	@GetMapping("/login")
+	public String loginPage() {
+		return "login";
+	}
 
-        if (logout != null) {
-            model.addAttribute("message", "¡Te has desconectado correctamente!");
-        }
+	@GetMapping("/login-error")
+	public String loginError(Model model) {
+		model.addAttribute("loginError", true);
+		return "login";
+	}
 
-        return "login"; // "login" es el nombre de la vista para la página de inicio de sesión (crea el archivo login.jsp)
-    }
 }
