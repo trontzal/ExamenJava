@@ -15,6 +15,7 @@ public class LoginController {
 	@GetMapping("/login-error")
 	public String loginError(Model model) {
 		model.addAttribute("loginError", true);
+		model.addAttribute("errorMessage", "Nombre de usuario o contraseña incorrectos.");
 		return "login";
 	}
 

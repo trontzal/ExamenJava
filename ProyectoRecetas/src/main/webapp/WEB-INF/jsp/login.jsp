@@ -5,6 +5,11 @@
 <title>Login</title>
 </head>
 <body>
+	<c:if test="${loginError}">
+		<div class="alert alert-danger" role="alert">
+			<p>${errorMessage}</p>
+		</div>
+	</c:if>
 	<div id="insertar-container"
 		class="container text-center mt-5 mb-5 border rounded shadow d-flex flex-column gap-2">
 
