@@ -17,21 +17,24 @@
 
 </head>
 <body>
-		<header class="bg-dark text-white p-3">
-			<div class="container">
-				<h1 class="display-4">Cook Book</h1>
-				<nav>
-					<ul class="nav">
-						<li class="nav-item"><a class="nav-link text-white" href="/">Mostrar</a></li>
-						<li class="nav-item"><a class="nav-link text-white"
-							href="/admin">Insertar</a></li>
+	<header class="bg-dark text-white p-3">
+		<div class="container">
+			<h1 class="display-4">Cook Book</h1>
+			<nav>
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link text-white" href="/">Mostrar</a></li>
+					<li class="nav-item"><a class="nav-link text-white"
+						href="/admin">Insertar</a></li>
+					<c:if
+						test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication and sessionScope.SPRING_SECURITY_CONTEXT.authentication.authenticated}">
 						<li class="nav-item">
 							<form class="form-inline"
 								action="${pageContext.request.contextPath}/logout" method="post">
 								<button class="nav-link text-white" type="submit">Logout</button>
 							</form>
 						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+					</c:if>
+				</ul>
+			</nav>
+		</div>
+	</header>

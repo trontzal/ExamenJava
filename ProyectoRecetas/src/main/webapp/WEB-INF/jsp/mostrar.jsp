@@ -5,6 +5,13 @@
 <title>Lista de recetas</title>
 </head>
 <body>
+
+	<c:if test="${logoutSuccess}">
+		<div class="alert alert-success" role="alert">
+			<p>${logoutMessage}</p>
+		</div>
+	</c:if>
+
 	<div class="container">
 		<h1>Listado de recetas</h1>
 		<div class="d-flex flex-wrap justify-content-around mb-5">

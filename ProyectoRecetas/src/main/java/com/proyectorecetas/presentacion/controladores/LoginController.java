@@ -18,5 +18,11 @@ public class LoginController {
 		model.addAttribute("errorMessage", "Nombre de usuario o contraseña incorrectos.");
 		return "login";
 	}
+	
+	@GetMapping("/logout-success")
+	public String logoutSuccess(Model model) {
+	    model.addAttribute("logoutSuccess", true);
+	    return "logoutSucces"; 
+	}
 
 }

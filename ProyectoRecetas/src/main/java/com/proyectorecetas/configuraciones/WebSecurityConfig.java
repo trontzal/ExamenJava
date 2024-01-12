@@ -10,6 +10,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.authentication.logout.SimpleUrlLogoutSuccessHandler;
 
 @Configuration
 	@EnableWebSecurity
@@ -40,7 +41,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 	            )
 	            .logout(logout -> logout
 	                    .logoutUrl("/logout") 
-	                    .logoutSuccessUrl("/") 
+	                    .logoutSuccessUrl("/logout-success")
 	                    .invalidateHttpSession(true) 
 	                    .deleteCookies("JSESSIONID") 
 	                    .permitAll()
