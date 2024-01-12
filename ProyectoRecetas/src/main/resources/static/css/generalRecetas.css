@@ -1,2 +1,7 @@
 @charset "UTF-8";
 
+/** Insertar **/
+#insertar-container{
+	width: fit-content;
+	padding: 2rem;
+}
