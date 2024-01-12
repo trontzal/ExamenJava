@@ -2,12 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Lista de recetas</title>
 </head>
 <body>
 	<div class="container">
-		<h1>Mostrar jps</h1>
+		<h1>Listado de recetas</h1>
 		<div class="d-flex flex-wrap justify-content-around mb-5">
 			<c:forEach var="receta" items="${recetas}">
 				<div class="card m-1" style="width: 18rem;">

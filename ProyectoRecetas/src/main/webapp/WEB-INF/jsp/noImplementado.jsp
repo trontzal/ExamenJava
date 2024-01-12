@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>No implementado</title>
 </head>
 <body>
 	<h2>No Implementado</h2>
