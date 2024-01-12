@@ -9,7 +9,7 @@
 		class="container text-center mt-5 mb-5 border rounded shadow d-flex flex-column gap-2">
 
 		<h2>Login</h2>
-		<form class="d-flex flex-column action=" /login" method="post">
+		<form class="d-flex flex-column" action="/login" method="post">
 			<label for="username">Usuario:</label> <input type="text"
 				id="username" name="username" required><br> <label
 				for="password">Contraseña:</label> <input type="password"
